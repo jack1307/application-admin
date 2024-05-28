@@ -1,0 +1,8 @@
+2024-05-28T14:30:05.282+08:00  WARN 70786 --- [risk-application-admin] [Thread-3] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-28T14:30:05.282+08:00  WARN 70786 --- [risk-application-admin] [Thread-7] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2024-05-28T14:30:05.311+08:00  WARN 70786 --- [risk-application-admin] [Thread-7] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2024-05-28T14:30:05.313+08:00  WARN 70786 --- [risk-application-admin] [Thread-3] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2024-05-28T14:30:05.335+08:00  WARN 70786 --- [risk-application-admin] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-05-28T14:30:05.335+08:00  WARN 70786 --- [risk-application-admin] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2024-05-28T14:30:05.335+08:00  WARN 70786 --- [risk-application-admin] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2024-05-28T14:30:05.336+08:00  WARN 70786 --- [risk-application-admin] [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
