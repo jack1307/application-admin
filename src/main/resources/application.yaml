@@ -1,0 +1,47 @@
+server:
+  port: 8077
+spring:
+  application:
+    name: risk-application-admin
+    profile:
+      active: public
+  cloud:
+    nacos:
+      config:
+        import: nacos:application.yml?refresh=true
+        import-check.enabled: false
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        file-extensions: yaml
+        cluster-name: DEFAULT
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        cluster-name: DEFAULT
+    boot:
+      admin:
+        ui:
+          title: Risk Application Admin
+          brand: Risk Application Admin
+          context-path: /admin
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: swagger
+  transaction:
+    rollback-on-commit-failure: true
+  sleuth:
+    trace-id128: true
+    sample:
+      probability: 1.0
+
+logging:
+  file:
+    name: '${user.dir}/logs/${spring.application.name:risk-application-admin}/output.log'
+  level:
+    root: warn
+    com:
+      hzbank: debug
